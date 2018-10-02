@@ -25,5 +25,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/samsung/gta9p-common/gta9p-common-vendor.mk)
