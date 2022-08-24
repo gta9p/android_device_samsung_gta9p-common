@@ -6,6 +6,9 @@
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
 # Board API level
 BOARD_SHIPPING_API_LEVEL := 30
 
